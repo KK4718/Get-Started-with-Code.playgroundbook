@@ -1,0 +1,816 @@
+/*
+Turns the character left.
+*/
+"Commands.turnLeft()" = "Xoay nhân vật sang trái.";
+
+/*
+Turns the character right.
+*/
+"Commands.turnRight()" = "Xoay nhân vật sang phải.";
+
+/*
+Moves the character forward one tile.
+*/
+"Commands.moveForward()" = "Di chuyển nhân vật về phía trước một ô.";
+
+/*
+Instructs the character to toggle a switch on the current tile.
+*/
+"Commands.toggleSwitch()" = "Hướng dẫn nhân vật chuyển đổi một công tắc trên ô hiện tại.";
+
+/*
+Instructs the character to collect a gem on the current tile.
+*/
+"Commands.collectGem()" = "Hướng dẫn nhân vật thu thập một viên ngọc trên ô hiện tại.";
+
+/*
+Condition that checks if the character is on a tile with an open switch on it.
+*/
+"Commands.isOnOpenSwitch" = "Điều kiện để kiểm tra xem nhân vật có ở trên một ô có công tắc mở không.";
+
+/*
+Condition that checks if the character is on a tile with a closed switch on it.
+*/
+"Commands.isOnClosedSwitch" = "Điều kiện để kiểm tra xem nhân vật có ở trên một ô có công tắc đóng không.";
+
+/*
+Condition that checks if the character is on a tile with a gem on it.
+*/
+"Commands.isOnGem" = "Điều kiện để kiểm tra xem nhân vật có ở trên một ô có viên ngọc không.";
+
+/*
+Condition that checks if the character is blocked from moving forward in the current direction.
+*/
+"Commands.isBlocked" = "Điều kiện để kiểm tra xem nhân vật có bị chặn di chuyển về phía trước theo hướng hiện tại không.";
+
+/*
+Condition that checks if the character is blocked on the right.
+*/
+"Commands.isBlockedRight" = "Điều kiện để kiểm tra xem nhân vật có bị chặn đường ở bên phải không.";
+
+/*
+Condition that checks if the character is blocked on the left.
+*/
+"Commands.isBlockedLeft" = "Điều kiện để kiểm tra xem nhân vật có bị chặn đường ở bên trái không.";
+
+/*
+Instructs the character to jump up or down onto the block the character is facing.
+If the current tile and the tile the character is facing are the same height, the character simply jumps forward one tile.
+*/
+"Commands.jump()" = "Hướng dẫn nhân vật nhảy lên hoặc xuống vào khối mà nhân vật đang đối diện.\nNếu ô hiện tại và ô mà nhân vật đang đối diện có cùng độ cao thì nhân vật chỉ cần nhảy về phía trước một ô.";
+
+/*
+ Generates a random integer (whole number) in the given range.
+
+ - Parameter from: The lowest value that the random number can have.
+ - Parameter to: The highest value that the random number can have.
+*/
+"randomInt(from:to:)" = " Tạo ra một số nguyên ngẫu nhiên (số nguyên vẹn) trong phạm vi cho trước.\n\n - Parameter from: Giá trị thấp nhất mà số ngẫu nhiên có thể có.\n - Parameter to: Giá trị cao nhất mà số ngẫu nhiên có thể có.";
+
+/*
+Generates a random boolean value: `true` or `false`.
+*/
+"randomBool()" = "Tạo ra một giá trị boolean ngẫu nhiên: `true` hoặc `false`.";
+
+/*
+The direction facing north in the world.
+*/
+"north" = "Hướng bắc trong thế giới.";
+
+/*
+The direction facing south in the world.
+*/
+"south" = "Hướng nam trong thế giới.";
+
+/*
+The direction facing east in the world.
+*/
+"east" = "Hướng đông trong thế giới.";
+
+/*
+The direction facing west in the world.
+*/
+"west" = "Hướng tây trong thế giới.";
+
+/*
+An enumeration of the directions in the world: `north`, `south`, `east` and `west`.
+*/
+"Direction" = "Một bảng liệt kê các hướng trong thế giới: `north`, `south`, `east` và `west`.";
+
+/*
+All instances of gems, switches, portals, blocks, characters, and experts are of type `Item`, allowing you to use these instances in methods such as `place(item:at:)` and `removeItems(at:)`.
+*/
+"Item" = "Tất cả các thể hiện của các viên ngọc, công tắc, cổng, khối, nhân vật và chuyên gia đều thuộc kiểu `Item`, cho phép bạn sử dụng những thể hiện này trong các phương thức như `place(item:at:)` và `removeItems(at:)`.";
+
+/*
+The type representing a platform that can be moved up or down using a lock.
+*/
+"Platform" = "Kiểu biểu thị một bậc có thể được di chuyển lên hoặc xuống bằng khóa.";
+
+/*
+Creates a platform on the specified level with the specified platform lock. The platform can then be placed in the world.
+- parameters:
+    - onLevel: The level above the floor the platform should start on. If left out, the level is 2.
+    - controlledBy: The platform lock that controls the platform.
+*/
+"Platform(onLevel:controlledBy:)" = "Tạo ra một bậc trên tầng được chỉ định với khóa bậc được chỉ định. Sau đó, bạn có thể đặt bậc trong thế giới.\n- parameters:\n    - onLevel: Tầng ở phía trên sàn mà bậc sẽ bắt đầu. Nếu để trống, tầng sẽ là 2.\n    - controlledBy: Khóa bậc điều khiển bậc.";
+
+/*
+Creates a platform on the specified level. The platform can then be placed in the world.
+ - parameters:
+     - onLevel: The level above the floor the platform should start on. If left out, the level is 2.
+*/
+"Platform(onLevel:)" = "Tạo ra một bậc trên tầng được chỉ định. Sau đó, bạn có thể đặt bậc trong thế giới.\n - parameters:\n     - onLevel: Tầng ở phía trên sàn mà bậc sẽ bắt đầu. Nếu để trống, tầng sẽ là 2.";
+
+/*
+The type representing the different characters that can be present and move about in the world.
+*/
+"Actor" = "Kiểu biểu thị các nhân vật khác nhau có thể xuất hiện và di chuyển xung quanh trong thế giới.";
+
+/*
+ Creates a character (or actor) with the specified name. The character can then be placed in the world.
+
+ Example usage:
+ ````
+ let blu = Character(name: .blu)
+ ````
+
+ - Parameter name: The name of the character chosen from the `CharacterName` enumeration. If you leave out `name`, the saved character will be used.
+*/
+"Actor(name:)" = " Tạo ra một nhân vật (hay người thực thi) với tên được chỉ định. Sau đó, bạn có thể đặt nhân vật trong thế giới.\n\n Ví dụ về cách sử dụng:\n ````\n let blu = Character(name: .blu)\n ````\n\n - Parameter name: Tên của nhân vật được chọn từ bảng liệt kê `CharacterName`. Nếu bạn bỏ phần `name` thì nhân vật đã lưu sẽ được sử dụng.";
+
+/*
+Instructs the character to jump forward and either up or down one block. 
+
+If the block the character is facing is one block higher than the block the character is standing on, the character will jump on top of it.
+If the block the character is facing is one block lower than the block the character is standing on, the character will jump down to that block.
+*/
+"Actor.jump()" = "Hướng dẫn nhân vật nhảy về phía trước và đi lên hoặc đi xuống một khối. \n\nNếu khối mà nhân vật đang đối diện cao hơn khối mà nhân vật đang đứng thì nhân vật sẽ nhảy lên khối đó.\nNếu khối mà nhân vật đang đối diện thấp hơn khối mà nhân vật đang đứng thì nhân vật sẽ nhảy xuống khối đó.";
+
+/*
+Moves the character forward by a certain number of tiles, as determined by the `distance` parameter value.
+
+Example usage:
+````
+move(distance: 3)
+// Moves forward three tiles.
+````
+
+- parameters:
+   - distance: Takes an `Int` value specifying the number of times to call `moveForward()`.
+*/
+"Actor.move(distance:)" = "Di chuyển nhân vật về phía trước một số lượng ô nhất định, như được xác định bằng giá trị tham số `distance`.\n\nVí dụ về cách sử dụng:\n````\nmove(distance: 3)\n// Di chuyển về phía trước ba ô.\n````\n\n- parameters:\n   - distance: Sử dụng một giá trị `Int` chỉ định số lần sẽ gọi `moveForward()`.";
+
+/*
+Moves the character forward one tile.
+*/
+"Actor.moveForward()" = "Di chuyển nhân vật về phía trước một ô.";
+
+/*
+Turns the character left.
+*/
+"Actor.turnLeft()" = "Xoay nhân vật sang trái.";
+
+/*
+Turns the character right.
+*/
+"Actor.turnRight()" = "Xoay nhân vật sang phải.";
+
+/*
+Instructs the character to collect a gem on the current tile.
+*/
+"Actor.collectGem()" = "Hướng dẫn nhân vật thu thập một viên ngọc trên ô hiện tại.";
+
+/*
+Instructs the character to toggle a switch on the current tile.
+*/
+"Actor.toggleSwitch()" = "Hướng dẫn nhân vật chuyển đổi một công tắc trên ô hiện tại.";
+
+/*
+Condition that checks if the character is blocked from moving forward in the current direction.
+*/
+"Actor.isBlocked" = "Điều kiện để kiểm tra xem nhân vật có bị chặn di chuyển về phía trước theo hướng hiện tại không.";
+
+/*
+Condition that checks whether the character is blocked on the left.
+*/
+"Actor.isBlockedLeft" = "Điều kiện để kiểm tra xem nhân vật có bị chặn đường ở bên trái không.";
+
+/*
+Condition that checks whether the character is blocked on the right.
+*/
+"Actor.isBlockedRight" = "Điều kiện để kiểm tra xem nhân vật có bị chặn đường ở bên phải không.";
+
+/*
+Condition that checks whether the character is currently on a tile with that contains a WorldNode of a specific type.
+*/
+"Actor.isOnItem" = "Điều kiện để kiểm tra xem nhân vật hiện có ở trên một ô chứa WorldNode của một kiểu cụ thể không.";
+
+/*
+Condition that checks whether the character is on a tile with a gem on it.
+*/
+"Actor.isOnGem" = "Điều kiện để kiểm tra xem nhân vật có ở trên một ô có viên ngọc không.";
+
+/*
+Condition that checks whether the character is on a tile with an open switch on it.
+*/
+"Actor.isOnOpenSwitch" = "Điều kiện để kiểm tra xem nhân vật có ở trên một ô có công tắc mở không.";
+
+/*
+Condition that checks whether the character is on a tile with a closed switch on it.
+*/
+"Actor.isOnClosedSwitch" = "Điều kiện để kiểm tra xem nhân vật có ở trên một ô có công tắc đóng không.";
+
+/*
+Causes the character to bust out a fancy move.
+*/
+"Actor.danceLikeNoOneIsWatching()" = "Khiến nhân vật bung ra một bước di chuyển khác thường.";
+
+/*
+The character receives a burst of energy, turning it up by several notches.
+*/
+"Actor.turnUp()" = "Nhân vật nhận được một chùm năng lượng, tăng lên một vài nấc.";
+
+/*
+The character starts to feel real funky, breaking it down for all to witness.
+*/
+"Actor.breakItDown()" = "Nhân vật bắt đầu cảm thấy thực sự hốt hoảng, phá vỡ bức tường để tất cả cùng chứng kiến.";
+
+/*
+The character feels a bit bummed.
+*/
+"Actor.grumbleGrumble()" = "Nhân vật cảm thấy bối rối một chút.";
+
+/*
+The character feels a wave of horror.
+*/
+"Actor.argh()" = "Nhân vật cảm nhận được một làn sóng sợ hãi.";
+
+/*
+The character performs a head scratch.
+*/
+"Actor.headScratch()" = "Nhân vật thực hiện cử chỉ gãi đầu.";
+
+/*
+The character hits a metaphorical wall.
+*/
+"Actor.bumpIntoWall()" = "Nhận vật đụng phải một bức tường ẩn dụ.";
+
+/*
+Specifies a location (column, row) in a grid of columns and rows.
+*/
+"Coordinate" = "Chỉ định một vị trí (cột, hàng) trong lưới gồm các cột và các hàng.";
+
+/*
+ Creates a coordinate specifying a column and a row within a grid.
+
+ Example usage:
+ ````
+ let position = Coordinate(column: 4, row: 2)
+ ````
+
+ - Parameter column: The column for the coordinate.
+ - Parameter row: The row for the coordinate.
+*/
+"Coordinate(column{Int}:row{Int}:)" = " Tạo ra một tọa độ chỉ định một cột và một hàng bên trong lưới.\n\n Ví dụ về cách sử dụng:\n ````\n let position = Coordinate(column: 4, row: 2)\n ````\n\n - Parameter column: Cột cho tọa độ.\n - Parameter row: Hàng cho tọa độ.";
+
+/*
+All instances of water blocks are of type 'Water'. Water can be placed only at a coordinate where all existing blocks have been removed.
+*/
+"Water" = "Tất cả các thể hiện của các khối nước đều thuộc kiểu \'Water\'. Bạn chỉ có thể đặt nước tại một tọa độ mà tất cả các khối hiện có đã bị xóa.";
+
+/*
+Creates a water block that can be placed in the world.
+*/
+"Water()" = "Tạo ra một khối nước có thể được đặt trong thế giới.";
+
+/*
+All gems in the puzzle world are of type `Gem`. Gems may be collected by an instance of the `Character` or `Expert` type, using the `collectGem()` method.
+*/
+"Gem" = "Tất cả các viên ngọc trong thế giới câu đố đều thuộc kiểu `Gem`. Các viên ngọc có thể được thu thập bởi một thể hiện của kiểu `Character` hoặc `Expert`, sử dụng phương thức `collectGem()`.";
+
+/*
+Creates a gem that can be placed in the world.
+*/
+"Gem()" = "Tạo ra một viên ngọc có thể được đặt trong thế giới.";
+
+/*
+GridWorld contains all methods and properties of the puzzle world itself, including methods such as `place(item:at:)` and `removeItems(at:)`, and properties such as `allPossibleCoordinates`.
+*/
+"GridWorld" = "GridWorld chứa tất cả các phương thức và thuộc tính của bản thân thế giới câu đố, bao gồm các phương thức như `place(item:at:)` và `removeItems(at:)`, cũng như các thuộc tính như `allPossibleCoordinates`.";
+
+/*
+Returns all the possible coordinates within the grid.
+*/
+"GridWorld.allPossibleCoordinates" = "Trả về tất cả các tọa độ có thể có bên trong lưới.";
+
+/*
+Returns the items present at the given coordinates
+*/
+"GridWorld.existingItems(at:)" = "Trả về các mục xuất hiện tại các tọa độ cho trước";
+
+/*
+Returns all existing items at any possible coordinates.
+*/
+"GridWorld.existingItems(ofType:)" = "Trả về tất cả các mục hiện có tại bất kỳ tọa độ nào có thể có.";
+
+/*
+Returns the first occurrence of the specified type at the given coordinates.
+*/
+"GridWorld.existingItem(ofType:at{Coordinate}:)" = "Trả về lần xuất hiện đầu tiên của kiểu được chỉ định tại các tọa độ cho trước.";
+
+/*
+Returns all nodes with the provided identifier that exist at the given coordinates.
+*/
+"GridWorld.existingItems(ofType:at{[Coordinate]}:)" = "Trả về tất cả các node có mã định danh được cung cấp tồn tại trong các tọa độ cho trước.";
+
+/*
+Returns all nodes except the provided identifiers that exist at the specified coordinates.
+*/
+"GridWorld.excludingNodes(ofTypes:at:)" = "Trả về tất cả các node trừ các mã định danh được cung cấp tồn tại trong các tọa độ được chỉ định.";
+
+/*
+Method that places an item at a coordinate in the puzzle world.
+
+Example usage:
+````
+place(Gem(), at: Coordinate(column: 3, row: 5))
+// Places an instance of type `Gem` at coordinate (3, 5).
+````
+
+- parameters:
+   - item: Takes an input conforming to type `Item`, such as a `Gem`, `Switch`, `Character`, or `Expert`.
+   - facing: Takes an enumeration value of type `Direction`, including `.north`, `.south`, `.east`, or `.west`.
+   - coordinate: Takes an instance of type `Coordinate`, specifying a location in the puzzle world.
+*/
+"GridWorld.place(_:facing:at:)" = "Phương thức đặt một mục tại một tọa độ trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nplace(Gem(), at: Coordinate(column: 3, row: 5))\n// Đặt một thể hiện của kiểu `Gem` tại tọa độ (3, 5).\n````\n\n- parameters:\n   - item: Sử dụng một đầu vào tuân theo kiểu `Item`, ví dụ như `Gem`, `Switch`, `Character` hoặc `Expert`.\n   - facing: Sử dụng một giá trị bảng liệt kê của kiểu `Direction`, bao gồm `.north`, `.south`, `.east` hoặc `.west`.\n   - coordinate: Sử dụng một thể hiện của kiểu `Coordinate`, chỉ định một vị trí trong thế giới câu đố.";
+
+/*
+Method that places an item at an array of coordinates in the puzzle world.
+
+Example usage:
+````
+place(Expert(), facing: .east, at: row(3))
+// Places an instance of type `Expert` facing east at each coordinate in row 3 of the puzzle world.
+````
+
+- parameters:
+   - item: Takes an input conforming to type `Item`, such as a `Gem`, `Switch`, `Character`, or `Expert`.
+   - facing: Takes an enumeration value of type `Direction`, including `.north`, `.south`, `.east`, or `.west`.
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.place(nodeOfType:facing:at:)" = "Phương thức đặt một mục tại một dãy các tọa độ trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nplace(Expert(), facing: .east, at: row(3))\n// Đặt một thể hiện của kiểu `Expert` hướng về phía đông tại mỗi tọa độ trong hàng 3 của thế giới câu đố.\n````\n\n- parameters:\n   - item: Sử dụng một đầu vào tuân thủ kiểu `Item`, ví dụ như một `Gem`, `Switch`, `Character` hoặc `Expert`.\n   - facing: Sử dụng một giá trị bảng liệt kê của kiểu `Direction`, bao gồm `.north`, `.south`, `.east` hoặc `.west`.\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Method that places a bidirectional portal into the puzzle world.
+
+Example usage:
+````
+place(Portal(color: .green), between: Coordinate(column: 2, row: 2), and: Coordinate(column: 4, row: 4))
+// Places a pair of portals, one at coordinate (2, 2) and another at (4, 4).
+````
+- parameters:
+   - portal: Takes an instance of type `Portal`.
+   - start: Takes an instance of type `Coordinate`, specifying the starting location of the portal.
+- end: Takes an instance of type `Coordinate`, specifying the ending location of the portal.
+*/
+"GridWorld.place(_:between:and:)" = "Phương thức đặt một cổng hai chiều vào trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nplace(Portal(color: .green), between: Coordinate(column: 2, row: 2), and: Coordinate(column: 4, row: 4))\n// Đặt một cặp cổng, một cổng tại tọa độ (2, 2) và một cổng khác tại (4, 4).\n````\n- parameters:\n   - portal: Sử dụng một thể hiện của kiểu `Portal`.\n   - start: Sử dụng một thể hiện của kiểu `Coordinate`, chỉ định vị trí bắt đầu của cổng.\n- end: Sử dụng một thể hiện của kiểu `Coordinate`, chỉ định vị trí kết thúc của cổng.";
+
+/*
+Removes all items at the provided coordinates, leaving a big hole in your world.
+
+Example usage:
+````
+remove(at: allPossibleCoordinates)
+// Removes all items at every coordinate in the map.
+````
+
+- parameters:
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.removeItems(at{[Coordinate]}:)" = "Xóa tất cả các mục tại các tọa độ được cung cấp, để lại một lỗ hổng lớn trong thế giới.\n\nVí dụ về cách sử dụng:\n````\nremove(at: allPossibleCoordinates)\n// Xóa tất cả các mục tại mọi tọa độ trong bản đồ.\n````\n\n- parameters:\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Removes all items at the provided coordinate, leaving a big hole in your world.
+
+Example usage:
+````
+remove(at: Coordinate(column: 3, row: 3))
+// Removes all items at coordinate (3, 3).
+````
+
+- parameters:
+   - coordinate: Takes an instance of type `Coordinate`, specifying a location in the puzzle world.
+*/
+"GridWorld.removeItems(at{Coordinate}:)" = "Xóa tất cả các mục tại tọa độ được cung cấp, để lại một lỗ hổng lớn trong thế giới.\n\nVí dụ về cách sử dụng:\n````\nremove(at: Coordinate(column: 3, row: 3))\n// Xóa tất cả các mục tại tọa độ (3, 3).\n````\n\n- parameters:\n   - coordinate: Sử dụng một thể hiện của kiểu `Coordinate`, chỉ định một vị trí trong thế giới câu đố.";
+
+/*
+Returns all coordinates in the specified column.
+
+Example usage:
+````
+column(2)
+// Returns all coordinates in column 2.
+````
+- parameters:
+   - col: A column of the puzzle world, specified with an `Int` value.
+*/
+"GridWorld.column(_:)" = "Trả về tất cả các tọa độ trong cột được chỉ định.\n\nVí dụ về cách sử dụng:\n````\ncolumn(2)\n// Trả về tất cả các tọa độ trong cột 2.\n````\n- parameters:\n   - col: Một cột của thế giới câu đố, được chỉ định bằng một giá trị `Int`.";
+
+/*
+Returns all coordinates in the specified row.
+
+Example usage:
+````
+row(3)
+// Returns all coordinates in row 3.
+````
+- parameters:
+   - row: A row of the puzzle world, specified with an `Int` value.
+*/
+"GridWorld.row(_:)" = "Trả về tất cả các tọa độ trong hàng được chỉ định.\n\nVí dụ về cách sử dụng:\n````\nrow(3)\n// Trả về tất cả các tọa độ trong hàng 3.\n````\n- parameters:\n   - row: Một hàng của thế giới câu đố, được chỉ định bằng một giá trị `Int`.";
+
+/*
+Returns all coordinates in the specified columns.
+
+Example usage:
+````
+coordinates(inColumns: [2,3,4])
+// Returns all coordinates in columns 2, 3, and 4.
+````
+- parameters:
+   - columns: Specifies the array of columns in the puzzle world.
+*/
+"GridWorld.coordinates(inColumns:)" = "Trả về tất cả các tọa độ trong các cột được chỉ định.\n\nVí dụ về cách sử dụng:\n````\ncoordinates(inColumns: [2,3,4])\n// Trả về tất cả các tọa độ trong các cột 2, 3 và 4.\n````\n- parameters:\n   - columns: Chỉ định dãy gồm các cột trong thế giới câu đố.";
+
+/*
+Returns all coordinates in the specified rows.
+
+Example usage:
+````
+coordinates(inRows: [1,5,9])
+// Returns all coordinates in rows 1, 5, and 9.
+````
+- parameters:
+   - rows: Specifies the array of rows in the puzzle world.
+*/
+"GridWorld.coordinates(inRows:)" = "Trả về tất cả các tọa độ trong các hàng được chỉ định.\n\nVí dụ về cách sử dụng:\n````\ncoordinates(inRows: [1,5,9])\n// Trả về tất cả các tọa độ trong các hàng 1, 5 và 9.\n````\n- parameters:\n   - rows: Chỉ định dãy gồm các hàng trong thế giới câu đố.";
+
+/*
+ Returns the coordinates within the intersection between the specified columns and rows.
+ 
+ Example usage:
+````
+ coordinatesBetween(inColumns: [0], intersectingRows: 0...2)
+// Returns (0, 0), (0, 1), (0, 2).
+ coordinatesBetween(inColumns: [1, 2], intersectingRows: [0, 3])
+// Returns (1, 0), (2, 0), (1, 3), (2, 3).
+````
+ - parameters:
+    - columns: Specifies the array of columns in the puzzle world.
+    - rows: Specifies the array of intersecting rows in the puzzle world.
+*/
+"GridWorld.coordinates(inColumns:intersectingRows)" = " Trả về các tọa độ bên trong giao điểm giữa các cột và các hàng được chỉ định.\n \n Ví dụ về cách sử dụng:\n````\n coordinatesBetween(inColumns: [0], intersectingRows: 0...2)\n// Trả về (0, 0), (0, 1), (0, 2).\n coordinatesBetween(inColumns: [1, 2], intersectingRows: [0, 3])\n// Trả về (1, 0), (2, 0), (1, 3), (2, 3).\n````\n - parameters:\n    - columns: Chỉ định dãy gồm các cột trong thế giới câu đố.\n    - rows: Chỉ định dãy gồm các hàng giao cắt trong thế giới câu đố.";
+
+/*
+ Returns the height of a stack of blocks at a given coordinate.
+ 
+ Example usage:
+````
+height(at: Coordinate(column: 3, row: 3))
+// Returns the height of a stack of blocks at (3, 3).
+````
+ - parameters:
+    - coordinate: Takes an input of type `Coordinate`, specifying a location in the puzzle world.
+*/
+"GridWorld.height(at:)" = " Trả về chiều cao của một chồng gồm các khối tại một tọa độ cho trước.\n \n Ví dụ về cách sử dụng:\n````\nheight(at: Coordinate(column: 3, row: 3))\n// Trả về chiều cao của một chồng gồm các khối tại (3, 3).\n````\n - parameters:\n    - coordinate: Sử dụng một đầu vào của kiểu `Coordinate`, chỉ định một vị trí trong thế giới câu đố.";
+
+/*
+Method that returns the gems present on an array of given coordinates.
+
+- parameters:
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.existingGems(at:)" = "Phương thức trả về các viên ngọc xuất hiện trên một dãy gồm các tọa độ cho trước.\n\n- parameters:\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Method that returns the switches present on an array of given coordinates.
+
+- parameters:
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.existingSwitches(at:)" = "Phương thức trả về các công tắc xuất hiện trên một dãy gồm các tọa độ cho trước.\n\n- parameters:\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Method that returns the characters present on an array of given coordinates.
+
+- parameters:
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.existingCharacters(at:)" = "Phương thức trả về các nhân vật xuất hiện trên một dãy gồm các tọa độ cho trước.\n\n- parameters:\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Method that returns the experts present on an array of given coordinates.
+
+- parameters:
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.existingExperts(at:)" = "Phương thức trả về các chuyên gia xuất hiện trên một dãy gồm các tọa độ cho trước.\n\n- parameters:\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Method that returns the blocks present on an array of given coordinates.
+
+- parameters:
+   - coordinates: Takes an array of type `Coordinate`, specifying a list of locations in the puzzle world.
+*/
+"GridWorld.existingBlocks(at:)" = "Phương thức trả về các khối xuất hiện trên một dãy gồm các tọa độ cho trước.\n\n- parameters:\n   - coordinates: Sử dụng một dãy của kiểu `Coordinate`, chỉ định một danh sách các vị trí trong thế giới câu đố.";
+
+/*
+Method that returns the number of blocks present at a single coordinate.
+*/
+"GridWorld.numberOfBlocks(at:)" = "Phương thức trả về số lượng các khối xuất hiện tại một tọa độ đơn nhất.";
+
+/*
+Method that returns the top block on a stack of blocks.
+*/
+"GridWorld.topBlock(at:)" = "Phương thức trả về khối trên cùng của một chồng gồm các khối.";
+
+/*
+Method that returns the water present in an array of given coordinates.
+*/
+"GridWorld.existingWater(at:)" = "Phương thức trả về nước xuất hiện trong dãy gồm các tọa độ cho trước";
+
+/*
+Method that places multiple blocks into the puzzle world, using an array of coordinates.
+*/
+"GridWorld.placeBlocks(at:)" = "Phương thức đặt nhiều khối vào trong thế giới câu đố, sử dụng một dãy các tọa độ.";
+
+/*
+Method that places multiple water tiles into the puzzle world, using an array of coordinates.
+*/
+"GridWorld.placeWater(at:)" = "Phương thức đặt nhiều ô nước vào trong thế giới câu đố, sử dụng một dãy các tọa độ.";
+
+/*
+Method that places multiple gems into the puzzle world, using an array of coordinates.
+*/
+"GridWorld.placeGems(at:)" = "Phương thức đặt nhiều viên ngọc vào trong thế giới câu đố, sử dụng một dãy các tọa độ.";
+
+/*
+Method that places an item into the puzzle world.
+ 
+ Example usage:
+ ````
+ place(Gem(), atColumn: 0, row: 0)
+ // Places an instance of type `Gem` at coordinate (0, 0).
+ ````
+ - parameters:
+    - item: Takes an input conforming to type `Item`, such as `Gem`, `Switch`, `Character`, or `Expert`.
+    - column: Takes an `Int` specifying a column of the puzzle world.
+    - row: Takes an `Int` specifying a row of the puzzle world.
+*/
+"GridWorld.place(_:atColumn:row:)" = "Phương thức đặt một mục vào trong thế giới câu đố.\n \n Ví dụ về cách sử dụng:\n ````\n place(Gem(), atColumn: 0, row: 0)\n // Đặt một thể hiện của kiểu `Gem` tại tọa độ (0, 0).\n ````\n - parameters:\n    - item: Sử dụng một đầu vào tuân thủ kiểu `Item`, ví dụ như `Gem`, `Switch`, `Character` hoặc `Expert`.\n    - column: Sử dụng một `Int` chỉ định một cột của thế giới câu đố.\n    - row: Sử dụng một `Int` chỉ định một hàng của thế giới câu đố.";
+
+/*
+Method that places an item facing a certain direction into the puzzle world.
+
+Example usage:
+````
+place(Character(), facing: .north, atColumn: 3, row: 2)
+// Places an instance of type `Character`, facing north at coordinate (3, 2).
+````
+- parameters:
+   - item: Takes an input conforming to type `Item`, such as a `Gem`, `Switch`, `Character`, or `Expert`.
+   - facing: Takes an enumeration value of type `Direction`, including `.north`, `.south`, `.east`, or `.west`.
+   - column: Takes an `Int` specifying a column of the puzzle world.
+   - row: Takes an `Int` specifying a row of the puzzle world.
+*/
+"GridWorld.plac(_:facing:atColumn:row:)" = "Phương thức đặt một mục hướng về một phía nhất định vào trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nplace(Character(), facing: .north, atColumn: 3, row: 2)\n// Đặt một thể hiện của kiểu `Character`, hướng về phía bắc tại tọa độ (3, 2).\n````\n- parameters:\n   - item: Sử dụng một đầu vào tuân thủ kiểu `Item`, ví dụ như một `Gem`, `Switch`, `Character` hoặc `Expert`.\n   - facing: Sử dụng một giá trị bảng liệt kê của kiểu `Direction`, bao gồm `.north`, `.south`, `.east` hoặc `.west`.\n   - column: Sử dụng một `Int` chỉ định một cột của thế giới câu đố.\n   - row: Sử dụng một `Int` chỉ định một hàng của thế giới câu đố.";
+
+/*
+Method that places a portal into the puzzle world.
+
+Example usage:
+````
+place(Portal(color: .green), atStartColumn: 2, startRow: 2, atEndColumn: 4, endRow: 4)
+// Places a pair of portals, one at coordinate (2, 2) and another at (4, 4).
+````
+- parameters:
+   - portal: Takes an instance of type `Portal`.
+   - atStartColumn: Takes an `Int` specifying the starting column of the portal.
+   - startRow: Takes an `Int` specifying the starting row of the portal.
+   - atEndColumn: Takes an `Int` specifying the ending column of the portal.
+   - endRow: Takes an `Int` specifying the ending row of the portal.
+*/
+"GridWorld.plac(_:atStartColumn:startRow:atEndColumn:endRow:)" = "Phương thức đặt một cổng vào trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nplace(Portal(color: .green), atStartColumn: 2, startRow: 2, atEndColumn: 4, endRow: 4)\n// Đặt một cặp cổng, một cổng tại tọa độ (2, 2) và một cổng khác tại (4, 4).\n````\n- parameters:\n   - portal: Sử dụng một thể hiện của kiểu `Portal`.\n   - atStartColumn: Sử dụng một `Int` chỉ định cột bắt đầu của cổng.\n   - startRow: Sử dụng một `Int` chỉ định hàng bắt đầu của cổng.\n   - atEndColumn: Sử dụng một `Int` chỉ định cột kết thúc của cổng.\n   - endRow: Sử dụng một `Int` chỉ định hàng kết thúc của cổng.";
+
+/*
+Method that removes all items located at specific coordinates in the puzzle world.
+
+Example usage:
+````
+remove(atColumn: 1, row: 3)
+// Removes all items at coordinate (1, 3).
+````
+- parameters:
+   - column: Takes an `Int` specifying a column of the puzzle world.
+   - row: Takes an `Int` specifying a row of the puzzle world.
+*/
+"GridWorld.removeItems(atColumn:row:)" = "Phương thức xóa tất cả các mục được đặt tại các tọa độ cụ thể trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nremove(atColumn: 1, row: 3)\n// Xóa tất cả các mục tại tọa độ (1, 3).\n````\n- parameters:\n   - column: Sử dụng một `Int` chỉ định một cột của thế giới câu đố.\n   - row: Sử dụng một `Int` chỉ định một hàng của thế giới câu đố.";
+
+/*
+Method that removes the top block located at specific coordinates in the puzzle world.
+
+Example usage:
+````
+removeBlock(atColumn: 1, row: 3)
+// Removes the top block located at coordinate (1, 3).
+````
+- parameters:
+    - column: Takes an `Int` specifying a column of the puzzle world.
+    - row: Takes an `Int` specifying a row of the puzzle world.
+*/
+"GridWorld.removeBlock(atColumn:row:)" = "Phương thức xóa khối trên cùng được đặt tại các tọa độ cụ thể trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nremoveBlock(atColumn: 1, row: 3)\n// Xóa khối trên cùng được đặt tại tọa độ (1, 3).\n````\n- parameters:\n    - column: Sử dụng một `Int` chỉ định một cột của thế giới câu đố.\n    - row: Sử dụng một `Int` chỉ định một hàng của thế giới câu đố.";
+
+/*
+Method that removes the top block located at specific coordinates in the puzzle world.
+
+Example usage:
+````
+removeBlock(at: Coordinate(column: 1, row: 3))
+// Removes the top block located at coordinate (1, 3).
+````
+- parameters:
+    - at: Takes a `Coordinate` specifying a location in the puzzle world.
+*/
+"GridWorld.removeBlock(at:)" = "Phương thức xóa khối trên cùng được đặt tại các tọa độ cụ thể trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nremoveBlock(at: Coordinate(column: 1, row: 3))\n// Xóa khối trên cùng được đặt tại tọa độ (1, 3).\n````\n- parameters:\n    - at: Sử dụng một `Coordinate` chỉ định một vị trí trong thế giới câu đố.";
+
+/*
+Method that removes all the blocks located at specified coordinates in the puzzle world.
+
+Example usage:
+````
+removeAllBlocks(at: Coordinate(column: 1, row: 3))
+// Removes all of the blocks located at coordinate (1, 3).
+````
+- parameters:
+    - at: Takes a `Coordinate` specifying a location in the puzzle world.
+*/
+"GridWorld.removeAllBlocks(at:)" = "Phương thức xóa tất cả các khối được đặt tại các tọa độ được chỉ định trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nremoveAllBlocks(at: Coordinate(column: 1, row: 3))\n// Xóa tất cả các khối được đặt tại tọa độ (1, 3).\n````\n- parameters:\n    - at: Sử dụng một `Coordinate` chỉ định một vị trí trong thế giới câu đố.";
+
+/*
+Removes all the blocks located at specific coordinates in the puzzle world.
+
+Example usage:
+````
+removeAllBlocks(atColumn: 1, row: 3)
+// Removes all of the blocks located at coordinate (1, 3).
+````
+- parameters:
+    - atColumn: Takes an `Int` specifying a column of the puzzle world.
+    - row: Takes an `Int` specifying a row of the puzzle world.
+*/
+"GridWorld.removeAllBlocks(atColumn:row:)" = "Xóa tất cả các khối được đặt tại các tọa độ cụ thể trong thế giới câu đố.\n\nVí dụ về cách sử dụng:\n````\nremoveAllBlocks(atColumn: 1, row: 3)\n// Xóa tất cả các khối được đặt tại tọa độ (1, 3).\n````\n- parameters:\n    - atColumn: Sử dụng một `Int` chỉ định một cột của thế giới câu đố.\n    - row: Sử dụng một `Int` chỉ định một hàng của thế giới câu đố.";
+
+/*
+The type representing the expert; capable of turning locks.
+*/
+"Expert" = "Kiểu biểu thị chuyên gia; có khả năng xoay các khóa.";
+
+/*
+Method that turns a lock up, causing all linked platforms to rise by the height of one block.
+*/
+"Expert.turnLockUp()" = "Phương thức xoay một khóa lên, khiến tất cả các bậc được liên kết nâng lên bằng chiều cao của một khối.";
+
+/*
+Method that turns a lock down, causing all linked platforms to fall by the height of one block.
+*/
+"Expert.turnLockDown()" = "Phương thức xoay một khóa xuống, khiến tất cả các bậc được liên kết hạ xuống bằng chiều cao của một khối.";
+
+/*
+    Method that turns a lock up or down a certain number of times.
+
+     Example usage:
+     ````
+     turnLock(up: false, numberOfTimes: 3)
+     // Turns the lock down three times.
+     
+     turnLock(up: true, numberOfTimes: 4)
+     // Turns the lock up four times.
+     ````
+     
+     - parameters:
+        - up: Takes a Boolean specifying whether the lock should be turned up (`true`) or down (`false`).
+        - numberOfTimes: Takes an `Int` specifying the number of times to turn the lock.
+*/
+"Expert.turnLock(up:numberOfTimes:)" = "    Phương thức xoay một khóa lên hoặc xuống một số lần nhất định.\n\n     Ví dụ về cách sử dụng:\n     ````\n     turnLock(up: false, numberOfTimes: 3)\n     // Xoay khóa xuống ba lần.\n     \n     turnLock(up: true, numberOfTimes: 4)\n     // Xoay khóa lên bốn lần.\n     ````\n     \n     - parameters:\n        - up: Sử dụng một Boolean cho biết liệu khóa phải được xoay lên (`true`) hay xuống (`false`).\n        - numberOfTimes: Sử dụng một `Int` chỉ định số lần sẽ xoay khóa.";
+
+/*
+A platform lock moves all instances of type `Platform` associated with the lock either up or down when an instance of type `Expert` calls the `turnLockUp()` or `turnLockDown()` method.
+*/
+"PlatformLock" = "Một khóa bậc di chuyển tất cả các thể hiện của kiểu `Platform` được liên kết với khóa lên hoặc xuống khi một thể hiện của kiểu `Expert` gọi phương thức `turnLockUp()` hoặc `turnLockDown()`.";
+
+/*
+ Creates a platform lock with the specified color. The platform lock can then can be placed in the world.
+
+ Example usage:
+ ````
+ let lock = PlatformLock(color: .green)
+ ````
+
+ - Parameter color: The color of the platform lock.
+*/
+"PlatformLock(color:)" = " Tạo ra một khóa bậc với màu được chỉ định. Sau đó, bạn có thể đặt khóa bậc trong thế giới.\n\n Ví dụ về cách sử dụng:\n ````\n let lock = PlatformLock(color: .green)\n ````\n\n - Parameter color: Màu của khóa bậc.";
+
+/*
+All blocks in the puzzle world are of type `Block`. When placed on the same coordinate, blocks stack on top of each other, increasing the height of the stack.
+*/
+"Block" = "Tất cả các khối trong thế giới câu đố đều thuộc kiểu `Block`. Khi được đặt trên cùng một tọa độ, các khối xếp chồng lên nhau, làm tăng chiều cao của chồng.";
+
+/*
+Creates a block that can be placed in the world.
+*/
+"Block()" = "Tạo ra một khối có thể được đặt trong thế giới.";
+
+/*
+An instance of type `Wall` will act as a barrier along one edge of a block, preventing a character or expert from moving through it.
+*/
+"Wall" = "Một thể hiện của kiểu `Wall` sẽ đóng vai trò là chướng ngại vật dọc theo một cạnh của một khối, ngăn chặn nhân vật hoặc chuyên gia di chuyển qua đó.";
+
+/*
+Creates an instance of `Wall` that can be placed in the world.
+*/
+"Wall()" = "Tạo ra một thể hiện của `Wall` có thể được đặt trong thế giới.";
+
+/*
+ Creates a wall with the specified edges. The wall can then can be placed in the world.
+
+ Example usage:
+ ````
+ let wall = Wall(edges: [.bottom, .top])
+ ````
+
+ - Parameter edges: The set of edges for the wall.
+*/
+"Wall(edges:)" = " Tạo ra một bức tường với các cạnh được chỉ định. Sau đó, bạn có thể đặt tường trong thế giới.\n\n Ví dụ về cách sử dụng:\n ````\n let wall = Wall(edges: [.bottom, .top])\n ````\n\n - Parameter edges: Nhóm các cạnh cho tường.";
+
+/*
+An instance of type `Stair` allows a character or expert to move up or down one unit of height in the puzzle world, using the `moveForward()` command.
+*/
+"Stair" = "Một thể hiện của kiểu `Stair` cho phép một nhân vật hoặc chuyên gia di chuyển lên hoặc xuống một đơn vị chiều cao trong thế giới câu đố, sử dụng lệnh `moveForward()`.";
+
+/*
+Creates a stair that can be placed in the world.
+*/
+"Stair()" = "Tạo ra một cầu thang có thể được đặt trong thế giới.";
+
+/*
+An instance of type `Switch` may be toggled either open or closed. An instance of type `Character` or `Expert` can reverse the state of the switch by standing on the switch and using the `toggleSwitch()` command.
+*/
+"Switch" = "Một thể hiện của kiểu `Switch` có thể được mở hoặc đóng. Một thể hiện của kiểu `Character` hoặc `Expert` có thể đảo ngược trạng thái của công tắc bằng cách đứng trên công tắc và sử dụng lệnh `toggleSwitch()`.";
+
+/*
+ Creates a switch with the specified state. The switch can then can be placed in the world.
+
+ Example usage:
+ ````
+ let switch = Switch(open: true)
+ ````
+
+ - Parameter open: The initial state of the switch. If left out, the switch is not open.
+*/
+"Switch(open:)" = " Tạo ra một công tắc có trạng thái được chỉ định. Sau đó, bạn có thể đặt công tắc trong thế giới.\n\n Ví dụ về cách sử dụng:\n ````\n let switch = Switch(open: true)\n ````\n\n - Parameter open: Trạng thái ban đầu của công tắc. Nếu để trống, công tắc không được mở.";
+
+/*
+Creates a switch that can be placed in the world.
+*/
+"Switch()" = "Tạo ra một công tắc có thể được đặt trong thế giới.";
+
+/*
+A portal is one of the items that can be placed in the world. It teleports Byte from one place to another, with Byte facing the same direction going in and out.
+*/
+"Portal" = "Cổng là một trong các mục có thể được đặt trong thế giới. Cổng dịch chuyển Byte từ nơi này đến nơi khác, với Byte hướng về cùng một phía khi đi vào và đi ra.";
+
+/*
+State of the portal. An active portal transports a character that moves onto it, while an inactive portal does not. Portals are active by default.
+*/
+"isActive" = "Trạng thái của cổng. Một cổng đang hoạt động chuyên chở nhân vật di chuyển lên trên đó, trong khi cổng không hoạt động sẽ không chuyên chở. Các cổng hoạt động theo mặc định.";
+
+/*
+ Creates a portal with the specified color. The portal can then can be placed in the world.
+
+ Example usage:
+ ````
+ let portal = Portal(color: .green)
+ ````
+
+ - Parameter color: The color to use for the portal.
+*/
+"Portal(color:)" = " Tạo ra một cổng có màu được chỉ định. Sau đó, bạn có thể đặt cổng trong thế giới.\n\n Ví dụ về cách sử dụng:\n ````\n let portal = Portal(color: .green)\n ````\n\n - Parameter color: Màu sẽ sử dụng cho cổng.";
+
+/*
+ Moves the character forward by a certain number of tiles, as determined by the `distance` parameter value.
+
+ - Parameter distance: The number of tiles to move.
+*/
+"Commands.move(distance:)" = " Di chuyển nhân vật về phía trước một số lượng ô nhất định, như được xác định bằng giá trị tham số `distance`.\n\n - Parameter distance: Số lượng ô sẽ di chuyển.";
+

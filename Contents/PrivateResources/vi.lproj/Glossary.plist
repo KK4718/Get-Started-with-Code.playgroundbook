@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Terms</key>
+	<dict>
+		<key>Boolean</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một kiểu có giá trị là `true` hoặc `false`. Ví dụ: `9 &lt; 7` trả về giá trị Boolean là `false` vì `9` không nhỏ hơn `7`.</string>
+				<key>Title</key>
+				<string>Boolean</string>
+			</dict>
+		</dict>
+		<key>Int</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một kiểu chứa số nguyên – một số không có phần thập phân, ví dụ như `10` hoặc `-42`. </string>
+				<key>Title</key>
+				<string>Int</string>
+			</dict>
+		</dict>
+		<key>String</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một kiểu chứa một loạt các ký tự, ví dụ như `"hello, world"` hoặc `"dancing kittens"`.</string>
+				<key>Title</key>
+				<string>Chuỗi</string>
+			</dict>
+		</dict>
+		<key>Swift</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Ngôn ngữ lập trình của Apple, được sử dụng để viết các ứng dụng dành cho iPhone, iPad, máy Mac, Apple Watch và Apple TV. </string>
+				<key>Title</key>
+				<string>Swift</string>
+			</dict>
+		</dict>
+		<key>algorithm</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một nhóm các hướng dẫn từng bước hoặc các quy tắc để giải quyết vấn đề. Ví dụ: một danh sách các bước được sử dụng để pha một ly trà có thể được coi là một thuật toán.</string>
+				<key>Title</key>
+				<string>thuật toán</string>
+			</dict>
+		</dict>
+		<key>argument</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một giá trị đầu vào được chuyển vào một hàm để tùy chỉnh hoạt động của hàm. Ví dụ: trong hàm gọi `move(distance: 3)`, `3` là một đối số chỉ định số lượng khoảng trống sẽ di chuyển.</string>
+				<key>Title</key>
+				<string>đối số</string>
+			</dict>
+		</dict>
+		<key>arithmetic operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu, ví dụ như `+`, `-`, `*` hoặc `/`, thực hiện một phép toán cơ bản trên một hoặc nhiều số. Ví dụ: `42 / 7` và `17 - 5` sử dụng các toán tử số học.</string>
+				<key>Title</key>
+				<string>toán tử số học</string>
+			</dict>
+		</dict>
+		<key>array</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một tập hợp chứa một danh sách có thứ tự gồm các mục cùng kiểu. Cùng một mục có thể xuất hiện nhiều lần tại các vị trí khác nhau. Ví dụ: `highScores = [37, 34, 29, 29, 26]` là một dãy gồm các số nguyên.</string>
+				<key>Title</key>
+				<string>dãy</string>
+			</dict>
+		</dict>
+		<key>assignment</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một hành động đặt giá trị của một biến hoặc hằng số.</string>
+				<key>Title</key>
+				<string>gán</string>
+			</dict>
+		</dict>
+		<key>assignment operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Ký hiệu `=` được sử dụng để đặt giá trị của một biến. Ví dụ: `greeting = "hello"` đặt giá trị của `greeting` thành “hello”.</string>
+				<key>Title</key>
+				<string>toán tử gán</string>
+			</dict>
+		</dict>
+		<key>bug</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một lỗi trong mã ngăn cản ứng dụng chạy như dự kiến. 
+</string>
+				<key>Title</key>
+				<string>lỗi</string>
+			</dict>
+		</dict>
+		<key>call</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Yêu cầu một chương trình chạy một hàm. Ví dụ: việc gọi hàm `moveForward()` trong mã của bạn sẽ yêu cầu chương trình thực hiện các hành động được định nghĩa trong hàm đó.</string>
+				<key>Title</key>
+				<string>gọi</string>
+			</dict>
+		</dict>
+		<key>coding</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Hành động biên soạn các lệnh, cấu trúc mã và thuật toán để tạo ra một chương trình máy tính.
+</string>
+				<key>Title</key>
+				<string>viết mã</string>
+			</dict>
+		</dict>
+		<key>command</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Mã yêu cầu một ứng dụng thực hiện một hành động cụ thể. 
+</string>
+				<key>Title</key>
+				<string>lệnh</string>
+			</dict>
+		</dict>
+		<key>comparison operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu, ví dụ như `==`, `!=`, `&lt;`, `&gt;`, `&lt;=` hoặc `&gt;=`, được sử dụng để so sánh hai giá trị. Toán tử so sánh có thể được sử dụng trong điều kiện của câu lệnh `if` hoặc vòng lặp `while` để trả về một giá trị Boolean cho biết liệu phép so sánh có phải là `true` không. Ví dụ: `6 &gt; 8` so sánh `6` với `8` và trả về `false`.</string>
+				<key>Title</key>
+				<string>toán tử so sánh</string>
+			</dict>
+		</dict>
+		<key>composition</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Quá trình kết hợp các phần nhỏ của một chương trình để giải quyết một vấn đề lớn hơn.
+</string>
+				<key>Title</key>
+				<string>tổ hợp</string>
+			</dict>
+		</dict>
+		<key>compound assignment operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một toán tử kết hợp việc gán (đặt giá trị của một biến) với một phép toán khác, ví dụ như cộng hoặc trừ. Ví dụ: nếu giá trị hiện tại của `a` là `1`, sử dụng `a += 3` sẽ cộng `3` vào `1` và chỉ định kết quả cho `a`, sao cho giá trị của `a` bây giờ là `4`.</string>
+				<key>Title</key>
+				<string>toán tử gán kép</string>
+			</dict>
+		</dict>
+		<key>conditional code</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Mã chỉ chạy khi các điều kiện cụ thể được đáp ứng. Ví dụ: các câu lệnh `if` và vòng lặp `while` chứa mã điều kiện sẽ chỉ chạy nếu một điều kiện là `true` hoặc trong khi một điều kiện là `true`. </string>
+				<key>Title</key>
+				<string>mã điều kiện</string>
+			</dict>
+		</dict>
+		<key>constant</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một bộ chứa có tên, lưu trữ một giá trị không thể thay đổi được.</string>
+				<key>Title</key>
+				<string>hằng số</string>
+			</dict>
+		</dict>
+		<key>debug</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Để tìm và sửa các lỗi trong mã ngăn cản một ứng dụng chạy đúng cách. </string>
+				<key>Title</key>
+				<string>gỡ lỗi</string>
+			</dict>
+		</dict>
+		<key>declaration</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một đoạn mã tạo ra nội dung mới trong ứng dụng của bạn, ví dụ như một hàm, biến hoặc kiểu tùy chỉnh. Ví dụ: `let planet = "Earth"` khai báo một hằng số mới là `planet` và cung cấp một giá trị là `"Earth"`.</string>
+				<key>Title</key>
+				<string>khai báo</string>
+			</dict>
+		</dict>
+		<key>decomposition</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Quá trình phân chia một vấn đề lớn thành các phần nhỏ hơn, dễ quản lý hơn. </string>
+				<key>Title</key>
+				<string>chia nhỏ</string>
+			</dict>
+		</dict>
+		<key>define</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Để cung cấp giá trị hoặc hoạt động tường minh của một đoạn mã mới được tạo, ví dụ như một hàm, biến hoặc kiểu tùy chỉnh. Ví dụ: bạn định nghĩa một hàm bằng cách cung cấp một nhóm các lệnh bên trong hàm để cho hàm đó biết cần làm gì.</string>
+				<key>Title</key>
+				<string>định nghĩa</string>
+			</dict>
+		</dict>
+		<key>dot notation</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một dạng cú pháp được sử dụng để truy cập các thuộc tính hoặc gọi các phương thức của một thể hiện. Ví dụ: `expert.toggleSwitch()` gọi phương thức `toggleSwitch()` trên thể hiện `expert`. </string>
+				<key>Title</key>
+				<string>ký pháp dấu chấm</string>
+			</dict>
+		</dict>
+		<key>else block</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Khối mã cuối cùng trong câu lệnh `if`. Khối `else` chạy nếu tất cả các điều kiện trong câu lệnh `if` là `false`. </string>
+				<key>Title</key>
+				<string>khối else</string>
+			</dict>
+		</dict>
+		<key>else if block</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một khối mã trong câu lệnh `if`, được sử dụng để kiểm tra một điều kiện không được kiểm tra bởi khối `if` hoặc bất kỳ khối `else if` nào khác.</string>
+				<key>Title</key>
+				<string>khối else if</string>
+			</dict>
+		</dict>
+		<key>enumeration</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một kiểu định nghĩa một nhóm các giá trị duy nhất, nhưng liên quan, được gọi là *trường hợp bảng liệt kê*. Ví dụ: một bảng liệt kê `Direction` định nghĩa các trường hợp cho từng hướng chính: `north`, `south`, `east` và `west`. Khi gán một bảng liệt kê cho một biến hoặc hằng số, bạn chỉ luôn chọn một trong các trường hợp; ví dụ:`let compassDirection: Direction = .north`.</string>
+				<key>Title</key>
+				<string>bảng liệt kê</string>
+			</dict>
+		</dict>
+		<key>for loop</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một khối mã được lặp lại chạy một số lần nhất định. </string>
+				<key>Title</key>
+				<string>cho vòng lặp</string>
+			</dict>
+		</dict>
+		<key>function</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một nhóm lệnh có tên có thể được chạy bất kỳ lúc nào cần thiết.</string>
+				<key>Title</key>
+				<string>hàm</string>
+			</dict>
+		</dict>
+		<key>if block</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Khối mã đầu tiên trong câu lệnh `if`. Khối `if` chạy nếu điều kiện trong câu lệnh `if` là `true`. </string>
+				<key>Title</key>
+				<string>khối if</string>
+			</dict>
+		</dict>
+		<key>if statement</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một cấu trúc mã được sử dụng để chạy mã dựa trên giá trị của một hoặc nhiều điều kiện. Khối mã đầu tiên trong một câu lệnh `if` là khối `if`. Một câu lệnh `if` cũng có thể chứa các khối khác cung cấp các kiểm tra bổ sung, ví dụ như khối `else` và khối `else if`.</string>
+				<key>Title</key>
+				<string>câu lệnh if</string>
+			</dict>
+		</dict>
+		<key>index</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một số biểu thị vị trí của một mục trong một dãy. </string>
+				<key>Title</key>
+				<string>chỉ mục</string>
+			</dict>
+		</dict>
+		<key>index out of range error</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một lỗi xảy ra khi cố gắng truy cập vào một dãy bằng một chỉ mục ở bên ngoài phạm vi của dãy đó. Ví dụ: chỉ mục `2` ở bên ngoài phạm vi của dãy sau đây: `[17, 42]`.</string>
+				<key>Title</key>
+				<string>lỗi chỉ mục ngoài phạm vi</string>
+			</dict>
+		</dict>
+		<key>initialization</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Hành động tạo ra một thể hiện mới của một kiểu, bao gồm việc đặt các giá trị ban đầu cho bất kỳ thuộc tính nào của kiểu. </string>
+				<key>Title</key>
+				<string>khởi tạo</string>
+			</dict>
+		</dict>
+		<key>inner loop</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một khối mã lặp lại (một vòng lặp) được lồng bên trong một vòng lặp khác (bên ngoài).</string>
+				<key>Title</key>
+				<string>vòng lặp bên trong</string>
+			</dict>
+		</dict>
+		<key>instance</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một giá trị của một kiểu cụ thể. Ví dụ: trong `let greenPortal = Portal()`, `greenPortal` là một thể hiện của kiểu `Portal`.</string>
+				<key>Title</key>
+				<string>thể hiện</string>
+			</dict>
+		</dict>
+		<key>iteration</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Hành động lặp lại một quy trình, ví dụ như thực hiện cùng một tác vụ trên từng mục trong một dãy.</string>
+				<key>Title</key>
+				<string>lặp lại</string>
+			</dict>
+		</dict>
+		<key>local variable</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một biến được khai báo bên trong một hàm, vòng lặp hoặc câu lệnh khác. Không thể truy cập biến cục bộ ở bên ngoài mã mà chúng được định nghĩa.</string>
+				<key>Title</key>
+				<string>biến cục bộ</string>
+			</dict>
+		</dict>
+		<key>logical AND operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu (`&amp;&amp;`) kết hợp hai giá trị Boolean, trong đó cả hai giá trị phải là true để mã tổng thể là true. Ví dụ: `a &amp;&amp; b` chỉ là true khi `a` và `b` là `true`.</string>
+				<key>Title</key>
+				<string>toán tử lô-gic AND</string>
+			</dict>
+		</dict>
+		<key>logical NOT operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu (`!`) đảo ngược giá trị Boolean của một đoạn mã. Ví dụ: nếu `a` là `true`, thì `!a` là `false`.</string>
+				<key>Title</key>
+				<string>toán tử lô-gic NOT</string>
+			</dict>
+		</dict>
+		<key>logical OR operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu (||) kết hợp hai giá trị Boolean, trong đó chỉ cần một giá trị là true để mã tổng thể là true. Ví dụ: a || b là true khi a hoặc b là true (hoặc khi cả hai là true). 
+</string>
+				<key>Title</key>
+				<string>toán tử lô-gic OR</string>
+			</dict>
+		</dict>
+		<key>logical operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu, ví dụ như `&amp;&amp;`, `||` hoặc `!`, sửa đổi hoặc kết hợp các giá trị lô-gic Boolean `true` và `false`.</string>
+				<key>Title</key>
+				<string>toán tử lô-gic</string>
+			</dict>
+		</dict>
+		<key>loop</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một khối mã được lặp lại một số lần nhất định (ví dụ: một vòng lặp `for`) hoặc đến khi một điều kiện được đáp ứng (ví dụ: một vòng lặp `while`).</string>
+				<key>Title</key>
+				<string>vòng lặp</string>
+			</dict>
+		</dict>
+		<key>method</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một hàm hay một nhóm các lệnh được định nghĩa bên trong một [kiểu](glossary://type).</string>
+				<key>Title</key>
+				<string>phương thức</string>
+			</dict>
+		</dict>
+		<key>nest</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Đặt một khối mã lặp lại (hoặc vòng lặp) bên trong một khối mã khác.</string>
+				<key>Title</key>
+				<string>lồng</string>
+			</dict>
+		</dict>
+		<key>operator</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một ký hiệu, ví dụ như `+`, `-` hoặc `&amp;&amp;`, biểu thị một tác vụ trên một hoặc nhiều giá trị. Ví dụ: trong `1 + 2`, toán tử phép cộng (`+`) cộng các số `1` và `2`. </string>
+				<key>Title</key>
+				<string>toán tử</string>
+			</dict>
+		</dict>
+		<key>outer loop</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một khối mã lặp lại (một vòng lặp) chứa một vòng lặp khác (bên trong).</string>
+				<key>Title</key>
+				<string>vòng lặp bên ngoài</string>
+			</dict>
+		</dict>
+		<key>parameter</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Tên của một giá trị đầu vào cho một hàm, được sử dụng trong định nghĩa của hàm. Ví dụ: trong `move(distance: Int)`, `distance` là một tham số lấy một giá trị thuộc kiểu Int.</string>
+				<key>Title</key>
+				<string>tham số</string>
+			</dict>
+		</dict>
+		<key>pattern</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một nhóm trường hợp hoặc dữ liệu lặp lại. 
+</string>
+				<key>Title</key>
+				<string>khuôn mẫu</string>
+			</dict>
+		</dict>
+		<key>property</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một biến (một bộ chứa có tên, lưu trữ một giá trị) được định nghĩa bên trong một kiểu.</string>
+				<key>Title</key>
+				<string>thuộc tính</string>
+			</dict>
+		</dict>
+		<key>pseudocode</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một phần mô tả mà con người có thể đọc được của một thuật toán, thường được viết bằng cách kết hợp ngôn ngữ thường ngày và mã. 
+</string>
+				<key>Title</key>
+				<string>mã giả</string>
+			</dict>
+		</dict>
+		<key>reusability</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một đặc điểm của mã cho phép mã được sử dụng trong nhiều tình huống khác nhau bên trong một chương trình. 
+</string>
+				<key>Title</key>
+				<string>khả năng tái sử dụng</string>
+			</dict>
+		</dict>
+		<key>right-hand rule</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một quy tắc, thường được sử dụng để tạo ra các thuật toán giải mê cung, hướng dẫn một nhân vật vượt qua mê cung bằng cách bám theo bức tường ở bên tay phải của nhân vật.</string>
+				<key>Title</key>
+				<string>quy tắc tay phải</string>
+			</dict>
+		</dict>
+		<key>state</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Thông tin được lưu trữ của một biến, chương trình hoặc hệ thống tại một thời điểm cho trước.</string>
+				<key>Title</key>
+				<string>trạng thái</string>
+			</dict>
+		</dict>
+		<key>statement</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một cấu trúc, ví dụ như một vòng lặp hoặc câu lệnh `if`, sắp xếp mã trong một chương trình.</string>
+				<key>Title</key>
+				<string>câu lệnh</string>
+			</dict>
+		</dict>
+		<key>syntax</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Các quy tắc để viết mã mà máy tính có thể hiểu và chạy.</string>
+				<key>Title</key>
+				<string>cú pháp</string>
+			</dict>
+		</dict>
+		<key>type</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một nhóm các thuộc tính (tính năng) và phương thức (hoạt động) có tên của một loại dữ liệu.</string>
+				<key>Title</key>
+				<string>kiểu</string>
+			</dict>
+		</dict>
+		<key>variable</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một bộ chứa có tên, lưu trữ một giá trị có thể thay đổi được. </string>
+				<key>Title</key>
+				<string>biến</string>
+			</dict>
+		</dict>
+		<key>while loop</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Một khối mã chạy đến khi nào một điều kiện cho trước là `true`. Khi điều kiện thay đổi thành `false`, vòng lặp dừng chạy. </string>
+				<key>Title</key>
+				<string>vòng lặp while</string>
+			</dict>
+		</dict>
+		<key>wireframe</key>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Definition</key>
+				<string>Đường viền của một mục, ví dụ như một viên ngọc, công tắc hay hình khối, trong thế giới hình ghép. Một khung dây được sử dụng để biểu thị khả năng mà mục có thể xuất hiện ngẫu nhiên mỗi lần hình ghép được chạy.</string>
+				<key>Title</key>
+				<string>khung dây</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

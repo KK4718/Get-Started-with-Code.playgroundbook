@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sd:accessibility_extension.column_row_announcement</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Thế giới rộng %#@lu_columns@ x %#@lu_rows@.</string>
+		<key>lu_columns</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>%lu cột</string>
+		</dict>
+		<key>lu_rows</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>%lu hàng</string>
+		</dict>
+	</dict>
+	<key>sd:accessibility_extension.goalDescription</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@lu_goals@</string>
+		<key>lu_goals</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>Các mục tiêu là: </string>
+		</dict>
+	</dict>
+	<key>sd:chapter2.challenge1.inefficientSuccessMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Bạn đang tiến bộ nhanh trong việc giải câu đố, nhưng bạn có thể làm việc hiệu quả hơn nữa với mã của mình! %#@lu_commands@, nhưng bạn có thể giải câu đố này với 16 lệnh trở xuống. Để làm cho mã của bạn hiệu quả hơn, hãy [định nghĩa](glossary://define) một hàm mà bạn có thể tái sử dụng, sau đó [gọi](glossary://call) hàm đó trong mã của mình. Bạn cũng có thể chuyển sang [**Trang tiếp theo**](@next) nếu muốn.</string>
+		<key>lu_commands</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>Bạn đã sử dụng %lu lệnh</string>
+		</dict>
+	</dict>
+	<key>sd:chapter2.challenge1.noCustomFunctionSuccessMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>### Chúc mừng! 
+Bạn đã giải được câu đố này, nhưng bạn đã sử dụng %#@lu_commands@! Hãy thử định nghĩa [hàm](glossary://function) của riêng bạn bằng `func name() {}` và gọi hàm đó để giải câu đố. Bạn sẽ không cần sử dụng nhiều lệnh như vậy và mã của bạn sẽ dễ đọc hơn. Bạn cũng có thể chuyển sang [**Trang tiếp theo**](@next) nếu muốn.</string>
+		<key>lu_commands</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>%lu lệnh</string>
+		</dict>
+	</dict>
+	<key>sd:chapter2.challenge2.inefficientSolutionSuccessMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@lu_commands@, nhưng bạn có thể giải câu đố này chỉ bằng 12 lệnh. Một cách để viết mã ngắn hơn, dễ đọc hơn là định nghĩa một hàm có khả năng hoàn thành một nhóm các lệnh lớn hơn với một lần gọi duy nhất.</string>
+		<key>lu_commands</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>Bạn đã sử dụng %lu lệnh</string>
+		</dict>
+	</dict>
+	<key>sd:chapter2.challenge2.noCustomFunctionSuccessMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>### Sắp được rồi! 
+Bạn đã tìm thấy một giải pháp cho câu đố, nhưng bạn đã không [định nghĩa](glossary://define) hàm của riêng mình. Bạn đã sử dụng %#@lu_commands@, nhưng bạn có thể giải câu đố với ít dòng mã hơn bằng cách sử dụng một nhóm mã có thể lặp lại trong một hàm. Hãy thử định nghĩa [hàm](glossary://function) của riêng bạn bằng `func name() {}` và cung cấp một nhóm lệnh, sau đó gọi hàm đó để giải câu đố. Bạn sẽ không cần sử dụng nhiều lệnh và mã của bạn sẽ dễ đọc hơn.</string>
+		<key>lu_commands</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>%lu lệnh</string>
+		</dict>
+	</dict>
+	<key>sd:chapter4.challenge2.missingForLoopSuccessMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Ồ! 
+Bạn đã hoàn thành câu đố, nhưng bạn đã quên không bao gồm [vòng lặp for](glossary://for%%20loop). %#@lu_lines_of_code@, nhưng với vòng lặp for, bạn sẽ chỉ cần 12 lệnh. 
+
+Bạn có thể thử lại hoặc chuyển sang phần tiếp theo. 
+
+[**Trang tiếp theo**](@next)</string>
+		<key>lu_lines_of_code</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>Bạn đã chạy %lu dòng mã</string>
+		</dict>
+	</dict>
+	<key>sd:chapter6.exercise2.partialSuccessMessage</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>### Sắp rồi! 
+Bạn đã hoàn thành câu đố, nhưng bạn đã không sử dụng vòng lặp `while`. %#@lu_lines_of_code@, nhưng nếu sử dụng vòng lặp `while` thì bạn có thể giải câu đố chỉ với 4 dòng mã!</string>
+		<key>lu_lines_of_code</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>Cần %lu dòng mã để hoàn thành câu đố này</string>
+		</dict>
+	</dict>
+	<key>sd:chapter8.exercise2.partialSuccess</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Bạn làm rất tốt khi thu thập những viên ngọc đó, nhưng dường như bạn đã không tăng dần biến `gemCounter` đúng cách. %#@lu_collected_gems@, nhưng biến `gemCounter` của bạn có giá trị bằng `%lu`. 
+
+Hãy đảm bảo rằng mỗi lần gọi `collectGem()`, bạn thêm `1` vào giá trị được lưu trữ bởi `gemCounter`.</string>
+		<key>lu_collected_gems</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>Bạn đã thu thập `%lu` viên ngọc</string>
+		</dict>
+	</dict>
+	<key>sd:gems_collected.%lu out of %lu gems collected</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%lu / %#@lu_total_gems@</string>
+		<key>lu_total_gems</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>%lu viên ngọc được thu thập</string>
+		</dict>
+	</dict>
+	<key>sd:switches_opened.%lu out of %lu switches opened</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%lu / %#@lu_total_switches@</string>
+		<key>lu_total_switches</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lu</string>
+			<key>other</key>
+			<string>%lu công tắc được mở</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

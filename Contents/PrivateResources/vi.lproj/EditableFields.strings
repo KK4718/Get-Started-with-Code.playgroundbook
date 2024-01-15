@@ -1,0 +1,20 @@
+/* Placeholder text for initializing the 'Expert' at this point*/
+"Initialize your expert here" = "Khởi tạo chuyên gia của bạn tại đây";
+
+/* Placeholder text for entering in your code */
+"Enter the rest of your solution here" = "Nhập phần còn lại của giải pháp của bạn tại đây";
+
+/* Placeholder text in the code for where to enter commands */
+"Add commands to your function" = "Thêm các lệnh vào hàm của bạn";
+
+/* Placeholder text in the code for where to enter the condition for a while loop */
+"Enter your condition" = "Nhập điều kiện của bạn";
+
+/* Placeholder text for entering a function name */
+"funcName" = "funcName";
+
+/* Placeholder text for entering a condition for a while loop */
+"Condition" = "Điều kiện";
+
+/* Placeholder text in code for where to enter commands within a while loop */
+"Add commands to your loop" = "Thêm các lệnh vào vòng lặp của bạn";

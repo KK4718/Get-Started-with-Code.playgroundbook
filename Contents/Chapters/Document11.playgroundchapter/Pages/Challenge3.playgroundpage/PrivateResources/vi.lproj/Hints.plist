@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Thử sử dụng [mã giả](glossary://pseudocode) để vạch ra cách mà bạn muốn giải câu đố này. Hãy cân nhắc những kỹ năng mà bạn có thể sử dụng và tìm một điểm bắt đầu. Khi bạn đã tìm ra chiến lược, hãy bắt đầu viết và kiểm tra mã của mình.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
