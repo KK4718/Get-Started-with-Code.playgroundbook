@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Trước tiên, hãy nhìn vào câu đố. Ban đầu, khuôn mẫu có thể khó tìm hơn một chút. Hãy thử giải một phần của câu đố trước khi tạo ra vòng lặp của bạn.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

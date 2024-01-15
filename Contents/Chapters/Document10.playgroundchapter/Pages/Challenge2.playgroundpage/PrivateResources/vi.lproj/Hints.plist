@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Giống như bạn đã làm trong các câu đố trước đó, trước tiên hãy [khởi tạo](glossary://initialization) nhân vật và chuyên gia của bạn. Sau đó, gọi các [phương thức](glossary://method) trên những [thể hiện](glossary://instance) đó để giải câu đố.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

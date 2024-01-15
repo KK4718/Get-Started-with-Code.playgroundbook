@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Có ba cầu thang chính cần leo ở tầng này. Đối với mỗi cầu thang, hãy sử dụng một hàm di chuyển nhân vật của bạn lên trên cùng, chuyển đổi công tắc và di chuyển xuống trở lại.
+            </string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

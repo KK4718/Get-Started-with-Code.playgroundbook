@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Hãy dành một phút để kiểm tra câu đố và xem những kỹ năng nào mà bạn đã học được đến nay sẽ hữu ích nhất trong việc giải câu đố. Có nhiều giải pháp khác nhau, vậy nên hãy thử một trong các ý tưởng của bạn!</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

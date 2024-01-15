@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Trước khi có thể giải câu đố này, bạn sẽ cần đặt chuyên gia của mình vào trong thế giới câu đố. Hãy [khởi tạo](glossary://initialization) một thể hiện của kiểu `Expert` và sau đó cho thế giới câu đố biết nơi mà bạn muốn đặt thể hiện đó.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

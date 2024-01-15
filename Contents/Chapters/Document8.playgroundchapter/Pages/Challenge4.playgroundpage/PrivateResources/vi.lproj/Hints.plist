@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>`totalGems` biểu thị tổng số lượng ngọc sẽ được tạo trong câu đố. Hãy sử dụng [hằng số](glossary://constant) này, cùng với một [biến](glossary://variable) đếm ngọc để xác định thời điểm sẽ dừng thu thập ngọc.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

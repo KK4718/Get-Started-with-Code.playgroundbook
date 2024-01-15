@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Dọc theo đường đi ở trung tâm, bất kỳ lúc nào bạn tiếp cận một viên ngọc, có một cầu thang dẫn xuống ở bên phải. Bất kỳ lúc nào bạn tiếp cận một công tắc đóng, có một viên ngọc khác ở bên trái.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

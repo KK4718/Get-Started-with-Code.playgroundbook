@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Bây giờ, bạn cần quản lý hai biến: một biến để theo dõi các viên ngọc và một biến để theo dõi các công tắc mở.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

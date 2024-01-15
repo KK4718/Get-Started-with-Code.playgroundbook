@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Hãy nghĩ về khuôn mẫu tại vị trí của các công tắc. Bạn có thể tận dụng khuôn mẫu để viết các hàm nhằm giải quyết các vấn đề nhỏ và kết hợp chúng để giải quyết vấn đề lớn hơn bằng cách nào?</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

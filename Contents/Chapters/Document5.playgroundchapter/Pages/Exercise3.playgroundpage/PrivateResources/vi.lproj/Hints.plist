@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Hãy thêm một câu lệnh `if` bên trong vòng lặp `for`, sau đó thêm điều kiện đầu tiên của bạn. Trong thanh phím tắt, hãy chọn toán tử `||` và thêm điều kiện thứ hai của bạn. Đồng thời, tạo ra một khối `else` để di chuyển nhân vật của bạn về phía trước nếu cả hai điều kiện đều là false.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

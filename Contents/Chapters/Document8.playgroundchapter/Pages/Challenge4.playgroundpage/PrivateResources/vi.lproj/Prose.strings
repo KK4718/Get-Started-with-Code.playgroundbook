@@ -1,0 +1,1 @@
+"FirstProseBlock" = " **Thử thách:** Thu thập một số lượng ngọc được xác định ngẫu nhiên, được biểu thị bằng `totalGems`.\n \nĐối với thử thách này, bạn được cung cấp một [hằng số](glossary://constant), `totalGems`, là một số được tạo ngẫu nhiên từ 1 đến 12. Sử dụng hằng số này, viết mã để thu thập số lượng ngọc được xác định trong `totalGems`, dừng sau khi đạt tới số lượng đó.";

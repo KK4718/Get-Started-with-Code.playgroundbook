@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Trước tiên, hãy di chuyển đến ô mà nhân vật của bạn cần rẽ phải. Sau đó, sử dụng một kết hợp của các lệnh hiện có để rẽ theo hướng đó.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Nếu bạn rẽ trái đủ số lần thì cuối cùng bạn sẽ quay đầu.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

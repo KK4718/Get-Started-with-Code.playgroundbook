@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Nhân vật của bạn phải thu thập tất cả các viên ngọc trong thế giới và bạn cần theo dõi số lượng đã thu thập. Đối với mỗi viên ngọc được thu thập, hãy tăng dần `gemCounter` thêm một đơn vị.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
