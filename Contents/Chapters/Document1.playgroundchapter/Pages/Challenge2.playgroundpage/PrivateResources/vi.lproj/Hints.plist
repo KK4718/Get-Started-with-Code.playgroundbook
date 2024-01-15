@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Chạy mã của bạn để xem Byte mắc sai sót lần đầu tiên ở đâu. Đây là cách mà bạn tìm dòng mã đầu tiên cần thay đổi.
+            </string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

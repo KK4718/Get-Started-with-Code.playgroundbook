@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Thu thập viên ngọc, sau đó di chuyển Byte đến chỗ công tắc (ô nằm ở trên cùng của cầu thang thứ hai, gần trung tâm của thế giới). Sau đó, chuyển đổi công tắc bằng lệnh `toggleSwitch()`.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

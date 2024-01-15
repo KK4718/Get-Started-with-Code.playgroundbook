@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Hints</key>
+	<array>
+		<dict>
+			<key>_LOCALIZABLE_</key>
+			<dict>
+				<key>Content</key>
+				<string>Trước tiên, [hàm](glossary://function) của bạn cần thu thập một viên ngọc, rồi di chuyển về phía trước, sau đó chuyển đổi một công tắc.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
